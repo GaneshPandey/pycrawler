@@ -11,8 +11,11 @@ Simple Web Crawler implemented in python:
 -- Currently Crawler works on simulated webpage on the code only.
 -- For crawling your page *Remove* comment from the code.
 '''#from urllib import urlopen
-	#def get_page(url):
-	#html = urlopen(url)
-	#return html.read()'''
+
+#def get_page(url):
+#	html = urlopen(url)
+#	return html.read()
+'''
+* ```https://en.wikipedia.org/wiki/Mersenne_twister``` Pseudocode
 
 
