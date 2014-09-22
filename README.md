@@ -9,10 +9,11 @@ Simple Web Crawler implemented in python:
 
 ## Note
 -- Currently Crawler works on simulated webpage on the code only.
--- For crawling your page *Remove* comment from the code.
-'''#from urllib import urlopen
+-- For crawling your own page *Remove comment* from the code.
+```
+	#from urllib import urlopen
 	#def get_page(url):
 	#html = urlopen(url)
-	#return html.read()'''
-
+	#return html.read()
+```
 
