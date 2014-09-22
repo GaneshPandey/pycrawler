@@ -46,14 +46,16 @@ def get_all_links(page):
             break
     return links
 
-def crawl_web(seed):
+def crawl_web(seed, max_hop):
     tocrawl = [seed]
     crawled = []
+    m = max_hop
     while tocrawl:
         page = tocrawl.pop()
-        if page not in crawled:
+        if page not in crawled and m:
             union(tocrawl, get_all_links(get_page(page)))
         crawled.append(page)
+        m = m-1
     return crawled
 
-print crawl_web("http://xkcd.com/353")
+print crawl_web("http://xkcd.com/353", 15)
