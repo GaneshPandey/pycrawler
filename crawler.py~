@@ -58,7 +58,7 @@ def crawl_web(seed, max_depth):
             crawled.append(page)
         if not tocrawl:
 	    tocrawl, next_depth = next_depth,[]
-            d = d+1
+        d = d+1
     return crawled
 
-print crawl_web("http://xkcd.com/353", 0)
+print crawl_web("http://xkcd.com/353", 15)
